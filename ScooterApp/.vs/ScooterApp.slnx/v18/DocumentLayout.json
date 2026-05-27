@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Studies\\TOP\\\u041F\u0440\u043E\u0435\u043A\u0442\\ScooterApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\studies\\top\\\u043F\u0440\u043E\u0435\u043A\u0442\\scooterapp\\scooterapp\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\studies\\top\\\u043F\u0440\u043E\u0435\u043A\u0442\\scooterapp\\scooterapp\\account.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\account.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Menu.xaml",
+              "DocumentMoniker": "D:\\Studies\\TOP\\\u041F\u0440\u043E\u0435\u043A\u0442\\ScooterApp\\ScooterApp\\Menu.xaml",
+              "RelativeDocumentMoniker": "ScooterApp\\Menu.xaml",
+              "ToolTip": "D:\\Studies\\TOP\\\u041F\u0440\u043E\u0435\u043A\u0442\\ScooterApp\\ScooterApp\\Menu.xaml",
+              "RelativeToolTip": "ScooterApp\\Menu.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-26T15:43:26.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Account.xaml",
+              "DocumentMoniker": "D:\\Studies\\TOP\\\u041F\u0440\u043E\u0435\u043A\u0442\\ScooterApp\\ScooterApp\\Account.xaml",
+              "RelativeDocumentMoniker": "ScooterApp\\Account.xaml",
+              "ToolTip": "D:\\Studies\\TOP\\\u041F\u0440\u043E\u0435\u043A\u0442\\ScooterApp\\ScooterApp\\Account.xaml",
+              "RelativeToolTip": "ScooterApp\\Account.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-25T15:55:19.846Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+﻿<Window x:Class="ScooterApp.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScooterApp"
+        mc:Ignorable="d"
+        Title="Меню" Height="900" Width="700" ResizeMode="NoResize" FontFamily="Consolas" FontSize="25" FontWeight="Bold">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                <GradientStop Color="GhostWhite"/>
+                <GradientStop Color="SkyBlue" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+
+        <!-- Блок информации о погоде -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2">
+            <TextBlock Text="Погода:"/>
+            <TextBlock x:Name="txtWeatherInfo" VerticalAlignment="Center" Text="Сегодня солнечно, 25°C" Margin="10 0 0 0"/>
+            <Image x:Name="imgWeather" VerticalAlignment="Center" Margin="10 0 0 0"/>
+        </StackPanel>
+
+        <!-- Дата грид с самокатами -->
+        <DataGrid  x:Name="dgScooters" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" Margin="10" Grid.ColumnSpan="2"/>
+
+        <!-- "Кнопка для отображения админ панели" 
+            
+              По дефолту видимость отключена
+        -->
+        <Button x:Name="btnAdminPanel" Grid.Row="2" Content="Админ панель" Margin="10" Padding="10" Background="AliceBlue" Visibility="Collapsed"/>
+
+        <Expander Grid.RowSpan="5" ExpandDirection="Right" Grid.Column="0" Background="Black" Padding="10">
+            <StackPanel>
+                <Button x:Name="btnAccount" Content="Личный кабинет" Margin="10 0 0 0" Padding="10" Background="DodgerBlue" Click="btnAccount_Click"/>
+                <Button x:Name="btnLogout"  Grid.Row="5" Content="Выйти из аккаунта" Margin="10" Padding="10" Background="Tomato" Click="btnLogout_Click"/>
+            </StackPanel>
+        </Expander>
+        
+        <!-- Блок фильтрации -->
+        <DockPanel Grid.Row="3" Margin="10">
+            <ComboBox x:Name="cmbFilter" DockPanel.Dock="Left" Width="335" FontWeight="Medium"/>
+            <Button x:Name="btnFilter" Content="Фильтровать" DockPanel.Dock="Right" Margin="10 0 0 0" Padding="10" Background="LightSeaGreen" Click="btnFilter_Click"/>
+        </DockPanel>
+        
+        <!-- Блок взаимодействия -->
+        <DockPanel Grid.Row="4" Margin="10">
+            <Button x:Name="btnRent" Width="335" Content="Арендовать" Padding="10" DockPanel.Dock="Left" Background="DeepSkyBlue" Click="btnRent_Click"/>
+        </DockPanel>
+    </Grid>
+</Window>
