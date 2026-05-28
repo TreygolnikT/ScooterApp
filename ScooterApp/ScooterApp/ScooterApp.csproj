@@ -9,9 +9,40 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-    <Folder Include="Data\" />
-    <Folder Include="Infrastructure\" />
+    <Compile Remove="Data\**" />
+    <Compile Remove="Infrastructure\**" />
+    <Compile Remove="Services\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="Infrastructure\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <None Remove="Data\**" />
+    <None Remove="Infrastructure\**" />
+    <None Remove="Services\**" />
+    <Page Remove="Data\**" />
+    <Page Remove="Infrastructure\**" />
+    <Page Remove="Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\logo.png" />
+    <None Remove="Images\дождь.png" />
+    <None Remove="Images\облачно.png" />
+    <None Remove="Images\солнечно.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\logo.png" />
+    <Resource Include="Images\дождь.png" />
+    <Resource Include="Images\облачно.png" />
+    <Resource Include="Images\солнечно.png" />
   </ItemGroup>
 
 </Project>

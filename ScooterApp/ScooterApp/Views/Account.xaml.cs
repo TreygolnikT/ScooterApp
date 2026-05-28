@@ -21,5 +21,12 @@ namespace ScooterApp
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click (object sender, RoutedEventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            Close();
+        }
     }
 }

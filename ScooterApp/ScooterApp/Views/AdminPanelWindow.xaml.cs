@@ -10,7 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace ScooterApp.Views
+namespace ScooterApp
 {
     /// <summary>
     /// Логика взаимодействия для AdminPanelWindow.xaml
@@ -20,6 +20,23 @@ namespace ScooterApp.Views
         public AdminPanelWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnAddScooter_Click (object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDeleteScooter_Click (object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnBackToMenu_Click (object sender, RoutedEventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            Close();
         }
     }
 }

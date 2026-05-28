@@ -10,7 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace ScooterApp.Views
+namespace ScooterApp
 {
     /// <summary>
     /// Логика взаимодействия для RentWindow.xaml
@@ -20,6 +20,16 @@ namespace ScooterApp.Views
         public RentWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnFinish_Click (object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnStopRide_Click (object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

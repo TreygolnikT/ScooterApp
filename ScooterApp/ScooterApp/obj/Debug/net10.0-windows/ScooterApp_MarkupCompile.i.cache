@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\w10home\source\repos\ScooterApp\ScooterApp\ScooterApp\obj\Debug\net10.0-windows\
+D:\Studies\TOP\Проект\ScooterApp\ScooterApp\obj\Debug\net10.0-windows\
 ScooterApp
 none
 false
 TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\w10home\source\repos\ScooterApp\ScooterApp\ScooterApp\App.xaml
+D:\Studies\TOP\Проект\ScooterApp\ScooterApp\App.xaml
 6413725993
 
-141389375841
-206-1840375534
+19-1724541485
+224-2007438121
 Views\Account.xaml;Views\AdminPanelWindow.xaml;Views\MainWindow.xaml;Views\Menu.xaml;Views\Registration.xaml;Views\RentWindow.xaml;
 
-True
+False
 

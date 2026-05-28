@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ScooterApp"
         mc:Ignorable="d"
         Title="Аренда самоката"
-        Height="620"
+        Height="650"
         Width="460"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
@@ -15,6 +15,8 @@
         FontSize="22"
         FontWeight="Bold">
 
+    
+    <!-- Стили -->
     <Window.Resources>
         <SolidColorBrush x:Key="MainBackgroundBrush" Color="#F4F1E8"/>
         <SolidColorBrush x:Key="PanelBrush" Color="#FBF8EF"/>
@@ -23,8 +25,8 @@
         <SolidColorBrush x:Key="ButtonHoverBrush" Color="#DDD2BA"/>
         <SolidColorBrush x:Key="StopBrush" Color="#E8C4C4"/>
         <SolidColorBrush x:Key="StopHoverBrush" Color="#DDA9A9"/>
-        <SolidColorBrush x:Key="PayBrush" Color="#D9E8C4"/>
-        <SolidColorBrush x:Key="PayHoverBrush" Color="#BDD7A0"/>
+        <SolidColorBrush x:Key="FinishBrush" Color="#D9E8C4"/>
+        <SolidColorBrush x:Key="FinishHoverBrush" Color="#BDD7A0"/>
 
         <Style TargetType="Border" x:Key="PanelBorderStyle">
             <Setter Property="BorderBrush" Value="{StaticResource BorderBrushCustom}"/>
@@ -94,11 +96,11 @@
             </Style.Triggers>
         </Style>
 
-        <Style x:Key="PayButtonStyle" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
-            <Setter Property="Background" Value="{StaticResource PayBrush}"/>
+        <Style x:Key="FinishButtonStyle" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+            <Setter Property="Background" Value="{StaticResource FinishBrush}"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="{StaticResource PayHoverBrush}"/>
+                    <Setter Property="Background" Value="{StaticResource FinishHoverBrush}"/>
                 </Trigger>
                 <Trigger Property="IsPressed" Value="True">
                     <Setter Property="Background" Value="#A9C98B"/>
@@ -116,6 +118,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
+        <!-- Таймер -->
         <Border Grid.Row="0" Style="{StaticResource PanelBorderStyle}">
             <StackPanel>
                 <TextBlock Text="Таймер" Style="{StaticResource LabelStyle}"/>
@@ -123,6 +126,7 @@
             </StackPanel>
         </Border>
 
+        <!-- Денежная сумма -->
         <Border Grid.Row="1" Style="{StaticResource PanelBorderStyle}">
             <StackPanel>
                 <TextBlock Text="Счёт на оплату" Style="{StaticResource LabelStyle}"/>
@@ -130,9 +134,10 @@
             </StackPanel>
         </Border>
 
+        <!-- Информация о самокате -->
         <Border Grid.Row="2" Style="{StaticResource PanelBorderStyle}">
             <StackPanel>
-                <TextBlock Text="ID скутера" Style="{StaticResource LabelStyle}"/>
+                <TextBlock Text="ID самоката" Style="{StaticResource LabelStyle}"/>
                 <TextBlock x:Name="txtScooterId" Text="1" Style="{StaticResource ValueStyle}"/>
 
                 <TextBlock Text="Текущий заряд" Style="{StaticResource LabelStyle}" Margin="0,8,0,6"/>
@@ -140,6 +145,7 @@
             </StackPanel>
         </Border>
 
+        <!-- Статус поездки -->
         <Border Grid.Row="3" Style="{StaticResource PanelBorderStyle}">
             <StackPanel VerticalAlignment="Center">
                 <TextBlock x:Name="txtRideStatus"
@@ -155,18 +161,22 @@
             </StackPanel>
         </Border>
 
+        <!-- Блок кнопок (стоп/завершение) -->
         <Grid Grid.Row="4">
             <Button x:Name="btnStopRide"
                     Content="СТОП"
                     Style="{StaticResource StopButtonStyle}"
                     Visibility="Visible"
+                    HorizontalAlignment="Left"
+                    Width="200"
                     Click="btnStopRide_Click"/>
 
-            <Button x:Name="btnPay"
-                    Content="ОПЛАТА"
-                    Style="{StaticResource PayButtonStyle}"
-                    Visibility="Collapsed"
-                    Click="btnPay_Click"/>
+            <Button x:Name="btnFinish"
+                    Content="ЗАВЕРШИТЬ"
+                    Style="{StaticResource FinishButtonStyle}"
+                    HorizontalAlignment="Right"
+                    Width="200"
+                    Click="btnFinish_Click"/>
         </Grid>
     </Grid>
 </Window>

@@ -15,6 +15,7 @@
         FontSize="22"
         FontWeight="Bold">
 
+    <!-- Стили -->
     <Window.Resources>
         <SolidColorBrush x:Key="MainBackgroundBrush" Color="#F4F1E8"/>
         <SolidColorBrush x:Key="PanelBrush" Color="#FBF8EF"/>
@@ -53,18 +54,6 @@
                     <Setter Property="Background" Value="#D6CAB0"/>
                 </Trigger>
             </Style.Triggers>
-        </Style>
-
-        <Style TargetType="ComboBox">
-            <Setter Property="Height" Value="48"/>
-            <Setter Property="Background" Value="White"/>
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="BorderBrush" Value="{StaticResource BorderBrushCustom}"/>
-            <Setter Property="BorderThickness" Value="2"/>
-            <Setter Property="Padding" Value="6,2"/>
-            <Setter Property="FontFamily" Value="Consolas"/>
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="FontWeight" Value="Bold"/>
         </Style>
 
         <Style TargetType="DataGrid">
@@ -137,8 +126,14 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
         <!-- Погода -->
-        <Border Grid.Row="0" Style="{StaticResource PanelBorderStyle}" Padding="10,8">
+        <Border Grid.Row="0" Style="{StaticResource PanelBorderStyle}" Padding="10,8" Grid.ColumnSpan="2" Grid.Column="1">
             <DockPanel LastChildFill="False">
                 <TextBlock Text="ПОГОДА:"
                            VerticalAlignment="Center"
@@ -159,9 +154,8 @@
         </Border>
 
         <!-- Таблица самокатов -->
-        <Border Grid.Row="1" Style="{StaticResource PanelBorderStyle}" Padding="0">
+        <Border Grid.Row="1" Style="{StaticResource PanelBorderStyle}" Padding="0" Grid.ColumnSpan="2" Grid.Column="1">
             <DataGrid x:Name="dgScooters"
-                      Margin="0"
                       ItemsSource="{Binding}"
                       HeadersVisibility="Column"
                       AutoGenerateColumns="False"
@@ -185,58 +179,45 @@
                 Content="Админ панель"
                 Height="52"
                 Margin="0,0,0,10"
+                HorizontalAlignment="Stretch"
                 Visibility="Collapsed"
-                HorizontalAlignment="Stretch"/>
+                Click="btnAdminPanel_Click"/>
 
-        <!-- Фильтр / сортировка -->
-        <Grid Grid.Row="3" Margin="0,0,0,10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="170"/>
-            </Grid.ColumnDefinitions>
+        <!-- Кнопка вкл/выкл "выдвижной" панели -->
+        <ToggleButton Content="///" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked" Padding="10" Margin="0 0 10 10" Background="#E8DDBF" BorderThickness="2" BorderBrush="Black"/>
 
-            <ComboBox x:Name="cmbFilter"
-                      Grid.Column="0"
-                      Margin="0,0,10,0"
-                      HorizontalContentAlignment="Center"
-                      VerticalContentAlignment="Center"/>
+        <!-- "Выдвижная" панель с личным кабинетом и выходом -->
+        <StackPanel x:Name="spTools" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="6" Visibility="Collapsed" Panel.ZIndex="2" >
 
-            <Button x:Name="btnFilter"
-                    Grid.Column="1"
-                    Content="СОРТИР."
-                    Click="btnFilter_Click"/>
-        </Grid>
+            <StackPanel.Background>
+                <SolidColorBrush Color="LightBlue" Opacity="0.8"/>
+            </StackPanel.Background>
 
-        <!-- Основные действия -->
-        <Grid Grid.Row="4" Margin="0,0,0,10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Button x:Name="btnRent"
-                    Grid.Column="0"
-                    Content="АРЕНДА"
-                    Margin="0,0,10,0"
-                    Height="52"
-                    Background="#E8DDBF"
-                    Click="btnRent_Click"/>
+            <Image Source="/Images/logo.png" Margin="10" Width="250"/>
 
             <Button x:Name="btnAccount"
-                    Grid.Column="1"
-                    Content="ЛИЧ. КАБ."
-                    Height="52"
-                    Click="btnAccount_Click"/>
-        </Grid>
+                Content="Личный кабинет"
+                Height="52"
+                Margin="10"
+                Click="btnAccount_Click"/>
 
-        <!-- Выход -->
-        <Button x:Name="btnLogout"
-                Grid.Row="5"
+            <Button x:Name="btnLogout"
                 Content="Выйти из аккаунта"
-                Height="48"
-                Width="320"
-                HorizontalAlignment="Center"
+                Height="52"
+                Margin="10"
                 Background="PaleVioletRed"
                 Click="btnLogout_Click"/>
+        </StackPanel>
+
+        <!-- Кнопка аренды -->
+        <Button x:Name="btnRent"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Grid.Row="5"
+                Content="АРЕНДА"
+                Margin="10"
+                Height="52"
+                Background="#E8DDBF"
+                Click="btnRent_Click"/>
     </Grid>
 </Window>
