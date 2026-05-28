@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ScooterApp.Services
+namespace ScooterApp.ViewModels
 {
-    // Сервис для главного окна
-    static class MainWindowService
+    // ViewModel главного окна (регистрации)
+    static class MainViewModel
     {
         // Метод для установки приветствия в зависимости от времени суток
         public static void SetGreeting(System.Windows.Controls.TextBlock txtGreeting)

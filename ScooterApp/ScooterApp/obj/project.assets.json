@@ -8,24 +8,19 @@
     "net10.0-windows": []
   },
   "packageFolders": {
-    "C:\\Users\\vadim\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\w10home\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Studies\\TOP\\Проект\\ScooterApp\\ScooterApp\\ScooterApp.csproj",
+      "projectUniqueName": "C:\\Users\\w10home\\source\\repos\\ScooterApp\\ScooterApp\\ScooterApp\\ScooterApp.csproj",
       "projectName": "ScooterApp",
-      "projectPath": "D:\\Studies\\TOP\\Проект\\ScooterApp\\ScooterApp\\ScooterApp.csproj",
-      "packagesPath": "C:\\Users\\vadim\\.nuget\\packages\\",
-      "outputPath": "D:\\Studies\\TOP\\Проект\\ScooterApp\\ScooterApp\\obj\\",
+      "projectPath": "C:\\Users\\w10home\\source\\repos\\ScooterApp\\ScooterApp\\ScooterApp\\ScooterApp.csproj",
+      "packagesPath": "C:\\Users\\w10home\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\w10home\\source\\repos\\ScooterApp\\ScooterApp\\ScooterApp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\vadim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\w10home\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
