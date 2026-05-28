@@ -1,4 +1,4 @@
-﻿using ScooterApp.Services;
+﻿using ScooterApp.ViewModels;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,7 +21,7 @@ namespace ScooterApp
         {
             InitializeComponent();
 
-            MainWindowService.SetGreeting(txtGreeting);
+            MainViewModel.SetGreeting(txtGreeting);
         }
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
