@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Loaded="Menu_Loaded"
         Title="Меню"
-        Height="900"
-        Width="700"
+        Height="948"
+        Width="712"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Background="SkyBlue"
@@ -191,7 +191,7 @@
                 <SolidColorBrush Color="LightBlue" Opacity="0.8"/>
             </StackPanel.Background>
 
-            <Image Source="/Images/logo.png" Margin="10" Width="250"/>
+            <Image Source="/Images/logo.png" Margin="10 200 10 0" Width="250"/>
 
             <TextBlock x:Name="tbRes" FontSize="10" TextWrapping="Wrap" ScrollViewer.CanContentScroll="True"/>
 

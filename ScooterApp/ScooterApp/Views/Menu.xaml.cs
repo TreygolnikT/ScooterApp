@@ -1,33 +1,27 @@
-﻿using ScooterApp.ViewModels;
+﻿using ScooterApp.Models;
+using ScooterApp.ViewModels;
+using ScooterApp.Views;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using System.Windows.Xps.Serialization;
 
 namespace ScooterApp
 {
-    /// <summary>
-    /// Логика взаимодействия для Menu.xaml
-    /// </summary>
     public partial class Menu : Window
     {
-        public Menu()
+        private readonly int _currentUserId;
+
+        public Menu(int userId)
         {
             InitializeComponent();
-
-            
+            _currentUserId = userId;
         }
 
         public async void Menu_Loaded(object sender, RoutedEventArgs e)
         {
+            LoadScooters();
+
             try
             {
                 var res = await MenuViewModel.ChooseWeather();
@@ -40,20 +34,48 @@ namespace ScooterApp
             }
             catch
             {
+                // Можно оставить пустым
+            }
+        }
 
+        private void LoadScooters()
+        {
+            using (var db = new AppContext())
+            {
+                dgScooters.ItemsSource = db.Scooters.ToList();
             }
         }
 
         private void btnRent_Click(object sender, RoutedEventArgs e)
         {
-            RentWindow rent = new RentWindow();
+            if (dgScooters.SelectedItem is not Scooter selectedScooter)
+            {
+                MessageBox.Show(
+                    "Сначала выберите самокат из таблицы.",
+                    "Самокат не выбран",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
+                return;
+            }
+
+            if (selectedScooter.Charge < 25)
+            {
+                MessageBox.Show(
+                    "Нельзя начать аренду: заряд самоката меньше 25%.",
+                    "Недостаточно заряда",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
+                return;
+            }
+
+            RentWindow rent = new RentWindow(_currentUserId, selectedScooter.ScooterId);
             rent.Show();
             Close();
         }
 
         private void btnAccount_Click(object sender, RoutedEventArgs e)
         {
-            Account account = new Account();
+            Account account = new Account(_currentUserId);
             account.Show();
             Close();
         }
@@ -67,7 +89,7 @@ namespace ScooterApp
 
         private void btnAdminPanel_Click(object sender, RoutedEventArgs e)
         {
-            AdminPanelWindow adminPanel = new AdminPanelWindow();
+            AdminPanelWindow adminPanel = new AdminPanelWindow(_currentUserId);
             adminPanel.Show();
             Close();
         }

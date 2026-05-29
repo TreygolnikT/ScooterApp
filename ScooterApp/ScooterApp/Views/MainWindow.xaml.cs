@@ -1,33 +1,36 @@
-﻿using ScooterApp.ViewModels;
-using System.Text;
+﻿using ScooterApp.Models;
+using ScooterApp.ViewModels;
+using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ScooterApp
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-
             MainViewModel.SetGreeting(txtGreeting);
+
+            DbSeeder.Seed();
         }
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e) //ВРЕМЕННЫЙ ФЕЙКОВЫЙ ВАРИАНТ ЗАХОДА В ГЛАВНОЕ ОКНО!!!
         {
-            Menu menu = new Menu();
-            menu.Show();
-            Close();
+            using (var db = new AppContext())
+            {
+                var user = db.Users.FirstOrDefault();
+
+                /*if (user == null)
+                {
+                    MessageBox.Show("В базе нет пользователей.");
+                    return;
+                }*/
+
+                Menu menu = new Menu(1);//user.UserId);
+                menu.Show();
+                Close();
+            }
         }
 
         private void btnRegister_Click(object sender, RoutedEventArgs e)

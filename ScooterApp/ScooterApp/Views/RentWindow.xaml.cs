@@ -1,35 +1,66 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using ScooterApp.Models;
+using ScooterApp.ViewModels;
+using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
-namespace ScooterApp
+namespace ScooterApp.Views
 {
-    /// <summary>
-    /// Логика взаимодействия для RentWindow.xaml
-    /// </summary>
     public partial class RentWindow : Window
     {
-        public RentWindow()
+        private readonly RentViewModel _viewModel;
+        private readonly int _userId;
+
+        public RentWindow(int userId, int scooterId)
         {
             InitializeComponent();
+
+            _userId = userId;
+            _viewModel = new RentViewModel(userId, scooterId);
+            DataContext = _viewModel;
+
+            Loaded += RentWindow_Loaded;
+            Closing += RentWindow_Closing;
         }
 
-        private void btnFinish_Click (object sender, RoutedEventArgs e)
+        private void RentWindow_Loaded(object sender, RoutedEventArgs e)
         {
-
+            _viewModel.StartRide();
         }
 
-        private void btnStopRide_Click (object sender, RoutedEventArgs e)
+        private void RentWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            _viewModel.StopTimer();
+        }
 
+        private void btnStopRide_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Кнопка \"СТОП\" пока не реализована.", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void btnFinish_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show(
+                "Вы уверены, что хотите завершить поездку?",
+                "Подтверждение",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question);
+
+            if (result != MessageBoxResult.Yes)
+                return;
+
+            string error = _viewModel.TryFinishRide();
+
+            if (error != null)
+            {
+                MessageBox.Show(error, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            MessageBox.Show("Спасибо за поездку! Оплата прошла успешно.", "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            Menu menuWindow = new Menu(_userId);
+            menuWindow.Show();
+            Close();
         }
     }
 }
