@@ -1,0 +1,401 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ScooterApp\\ScooterApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\models\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\models\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\viewmodels\\rentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\viewmodels\\rentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\models\\rentalhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\models\\rentalhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\models\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\models\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\models\\coord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\models\\coord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\models\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\models\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\models\\scooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\models\\scooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\views\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\views\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\views\\menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\views\\menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\views\\adminpanelwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\views\\adminpanelwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\views\\account.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\views\\account.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\views\\rentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\views\\rentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\viewmodels\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\viewmodels\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\views\\account.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\views\\account.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\views\\adminpanelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\views\\adminpanelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\scooterapp\\scooterapp\\scooterapp\\views\\rentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\views\\rentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\App.xaml.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\App.xaml.cs",
+              "RelativeToolTip": "ScooterApp\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T13:02:41.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Models\\DbSeeder.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\DbSeeder.cs",
+              "RelativeToolTip": "ScooterApp\\Models\\DbSeeder.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAgwFsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:53:54.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Views\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ScooterApp\\Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:31:12.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminPanelWindow.xaml.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\AdminPanelWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Views\\AdminPanelWindow.xaml.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\AdminPanelWindow.xaml.cs",
+              "RelativeToolTip": "ScooterApp\\Views\\AdminPanelWindow.xaml.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAcwJUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:31:06.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Account.xaml.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\Account.xaml.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Views\\Account.xaml.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\Account.xaml.cs",
+              "RelativeToolTip": "ScooterApp\\Views\\Account.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:30:45.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Account.xaml",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\Account.xaml",
+              "RelativeDocumentMoniker": "ScooterApp\\Views\\Account.xaml",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\Account.xaml",
+              "RelativeToolTip": "ScooterApp\\Views\\Account.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-29T12:21:40.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdminPanelWindow.xaml",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\AdminPanelWindow.xaml",
+              "RelativeDocumentMoniker": "ScooterApp\\Views\\AdminPanelWindow.xaml",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\AdminPanelWindow.xaml",
+              "RelativeToolTip": "ScooterApp\\Views\\AdminPanelWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-29T12:21:38.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ScooterApp\\Views\\MainWindow.xaml",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "ScooterApp\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-29T12:21:36.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RentViewModel.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\ViewModels\\RentViewModel.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\ViewModels\\RentViewModel.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\ViewModels\\RentViewModel.cs",
+              "RelativeToolTip": "ScooterApp\\ViewModels\\RentViewModel.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAgwMwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:19:42.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RentWindow.xaml.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\RentWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Views\\RentWindow.xaml.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\RentWindow.xaml.cs",
+              "RelativeToolTip": "ScooterApp\\Views\\RentWindow.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:18:53.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RentWindow.xaml",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\RentWindow.xaml",
+              "RelativeDocumentMoniker": "ScooterApp\\Views\\RentWindow.xaml",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\RentWindow.xaml",
+              "RelativeToolTip": "ScooterApp\\Views\\RentWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-29T12:04:15.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "ScooterApp\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T11:56:03.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Models\\User.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\User.cs",
+              "RelativeToolTip": "ScooterApp\\Models\\User.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowBMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T11:55:59.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Scooter.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\Scooter.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Models\\Scooter.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\Scooter.cs",
+              "RelativeToolTip": "ScooterApp\\Models\\Scooter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T11:55:57.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Models\\Role.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\Role.cs",
+              "RelativeToolTip": "ScooterApp\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T11:55:55.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RentalHistory.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\RentalHistory.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Models\\RentalHistory.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\RentalHistory.cs",
+              "RelativeToolTip": "ScooterApp\\Models\\RentalHistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T11:55:48.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Level.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\Level.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Models\\Level.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\Level.cs",
+              "RelativeToolTip": "ScooterApp\\Models\\Level.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T11:55:42.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Coord.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\Coord.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Models\\Coord.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\Coord.cs",
+              "RelativeToolTip": "ScooterApp\\Models\\Coord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T11:55:38.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppContext.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\AppContext.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Models\\AppContext.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Models\\AppContext.cs",
+              "RelativeToolTip": "ScooterApp\\Models\\AppContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T11:55:28.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Menu.xaml",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\Menu.xaml",
+              "RelativeDocumentMoniker": "ScooterApp\\Views\\Menu.xaml",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\Menu.xaml",
+              "RelativeToolTip": "ScooterApp\\Views\\Menu.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-29T03:21:42.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Menu.xaml.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\Menu.xaml.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Views\\Menu.xaml.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\Views\\Menu.xaml.cs",
+              "RelativeToolTip": "ScooterApp\\Views\\Menu.xaml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T03:24:04.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MenuViewModel.cs",
+              "DocumentMoniker": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\ViewModels\\MenuViewModel.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\ViewModels\\MenuViewModel.cs",
+              "ToolTip": "D:\\ScooterApp\\ScooterApp\\ScooterApp\\ViewModels\\MenuViewModel.cs",
+              "RelativeToolTip": "ScooterApp\\ViewModels\\MenuViewModel.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T03:21:39.87Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

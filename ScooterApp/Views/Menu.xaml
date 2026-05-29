@@ -1,0 +1,223 @@
+﻿<Window x:Class="ScooterApp.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScooterApp"
+        mc:Ignorable="d"
+        Loaded="Menu_Loaded"
+        Title="Меню"
+        Height="948"
+        Width="712"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="SkyBlue"
+        FontFamily="Consolas"
+        FontSize="22"
+        FontWeight="Bold">
+
+    <!-- Стили -->
+    <Window.Resources>
+        <SolidColorBrush x:Key="MainBackgroundBrush" Color="#F4F1E8"/>
+        <SolidColorBrush x:Key="PanelBrush" Color="#FBF8EF"/>
+        <SolidColorBrush x:Key="BorderBrushCustom" Color="#1E1E1E"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#E9E1CF"/>
+        <SolidColorBrush x:Key="ButtonBrush" Color="#EEE6D6"/>
+        <SolidColorBrush x:Key="ButtonHoverBrush" Color="#DDD2BA"/>
+
+        <Style TargetType="Border" x:Key="PanelBorderStyle">
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrushCustom}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="CornerRadius" Value="0"/>
+            <Setter Property="Background" Value="{StaticResource PanelBrush}"/>
+            <Setter Property="Padding" Value="6"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="0"/>
+            <Setter Property="Padding" Value="8"/>
+            <Setter Property="Background" Value="{StaticResource ButtonBrush}"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrushCustom}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="FontFamily" Value="Consolas"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource ButtonHoverBrush}"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#D6CAB0"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="DataGrid">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrushCustom}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="RowBackground" Value="White"/>
+            <Setter Property="AlternatingRowBackground" Value="#F7F3E8"/>
+            <Setter Property="GridLinesVisibility" Value="All"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource BorderBrushCustom}"/>
+            <Setter Property="VerticalGridLinesBrush" Value="{StaticResource BorderBrushCustom}"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="ColumnHeaderHeight" Value="42"/>
+            <Setter Property="RowHeight" Value="44"/>
+            <Setter Property="CanUserResizeRows" Value="False"/>
+            <Setter Property="CanUserResizeColumns" Value="False"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="SelectionMode" Value="Single"/>
+            <Setter Property="SelectionUnit" Value="FullRow"/>
+            <Setter Property="FontFamily" Value="Consolas"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrushCustom}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Consolas"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="4"/>
+        </Style>
+
+        <Style TargetType="DataGridCell">
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrushCustom}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="4"/>
+            <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="DataGridRow">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background" Value="#D9ECFF"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#EFE7D5"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="SkyBlue" Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Погода и время -->
+        <Border Grid.Row="0" Style="{StaticResource PanelBorderStyle}" Padding="10,8" Grid.ColumnSpan="2" Grid.Column="1">
+            <DockPanel LastChildFill="False">
+                <TextBlock x:Name="tbTime"
+                           Text="00:00:00"
+                           VerticalAlignment="Center"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Margin="0,0,12,0"/>
+                <Image x:Name="imgWeather"
+                       DockPanel.Dock="Right"
+                       Width="32"
+                       Height="32"
+                       Stretch="Uniform"
+                       VerticalAlignment="Center"/>
+            </DockPanel>
+        </Border>
+
+        <!-- Таблица самокатов -->
+        <Border Grid.Row="1" Style="{StaticResource PanelBorderStyle}" Padding="0" Grid.ColumnSpan="2" Grid.Column="1">
+            <DataGrid x:Name="dgScooters"
+                      ItemsSource="{Binding}"
+                      HeadersVisibility="Column"
+                      AutoGenerateColumns="False"
+                      CanUserAddRows="False"
+                      IsReadOnly="True"
+                      SelectionMode="Single"
+                      SelectionUnit="FullRow">
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID скутера" Binding="{Binding ScooterId}" Width="*"/>
+                    <DataGridTextColumn Header="Модель" Binding="{Binding Model}" Width="*"/>
+                    <DataGridTextColumn Header="Заряд" Binding="{Binding Charge}" Width="*"/>
+                    <DataGridTextColumn Header="Координаты" Binding="{Binding CoordsId}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+
+        <!-- Админ кнопка -->
+        <Button x:Name="btnAdminPanel"
+                Grid.Row="2"
+                Content="Админ панель"
+                Height="52"
+                Margin="0,0,0,10"
+                HorizontalAlignment="Stretch"
+                Visibility="Collapsed"
+                Click="btnAdminPanel_Click"/>
+
+        <!-- Кнопка вкл/выкл "выдвижной" панели -->
+        <ToggleButton Content="///" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked" Padding="10" Margin="0 0 10 10" Background="#E8DDBF" BorderThickness="2" BorderBrush="Black"/>
+
+        <!-- "Выдвижная" панель с личным кабинетом и выходом -->
+        <StackPanel x:Name="spTools" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="6"  Panel.ZIndex="2" Visibility="Collapsed">
+
+            <StackPanel.Background>
+                <SolidColorBrush Color="LightBlue" Opacity="0.8"/>
+            </StackPanel.Background>
+
+            <Image Source="/Images/logo.png" Margin="10" Width="250"/>
+
+            <TextBlock x:Name="tbRes" FontSize="10" TextWrapping="Wrap" ScrollViewer.CanContentScroll="True"/>
+
+            <Button x:Name="btnAccount"
+                Content="Личный кабинет"
+                Height="52"
+                Margin="10"
+                Click="btnAccount_Click"/>
+
+            <Button x:Name="btnLogout"
+                Content="Выйти из аккаунта"
+                Height="52"
+                Margin="10"
+                Background="PaleVioletRed"
+                Click="btnLogout_Click"/>
+        </StackPanel>
+
+        <!-- Кнопка аренды -->
+        <Button x:Name="btnRent"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Grid.Row="5"
+                Content="АРЕНДА"
+                Margin="10"
+                Height="52"
+                Background="#E8DDBF"
+                Click="btnRent_Click"/>
+    </Grid>
+</Window>
