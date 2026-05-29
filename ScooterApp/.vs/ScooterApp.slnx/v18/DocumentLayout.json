@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Studies\\TOP\\\u041F\u0440\u043E\u0435\u043A\u0442\\ScooterApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\studies\\top\\\u043F\u0440\u043E\u0435\u043A\u0442\\scooterapp\\scooterapp\\views\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\views\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\studies\\top\\\u043F\u0440\u043E\u0435\u043A\u0442\\scooterapp\\scooterapp\\views\\menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\views\\menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|d:\\studies\\top\\\u043F\u0440\u043E\u0435\u043A\u0442\\scooterapp\\scooterapp\\viewmodels\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8D8841-B71C-7FF8-E344-6D2AAAEFCE30}|ScooterApp\\ScooterApp.csproj|solutionrelative:scooterapp\\viewmodels\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +35,44 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Menu.xaml",
+              "DocumentMoniker": "D:\\Studies\\TOP\\\u041F\u0440\u043E\u0435\u043A\u0442\\ScooterApp\\ScooterApp\\Views\\Menu.xaml",
+              "RelativeDocumentMoniker": "ScooterApp\\Views\\Menu.xaml",
+              "ToolTip": "D:\\Studies\\TOP\\\u041F\u0440\u043E\u0435\u043A\u0442\\ScooterApp\\ScooterApp\\Views\\Menu.xaml",
+              "RelativeToolTip": "ScooterApp\\Views\\Menu.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-29T03:21:42.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.xaml.cs",
+              "DocumentMoniker": "D:\\Studies\\TOP\\\u041F\u0440\u043E\u0435\u043A\u0442\\ScooterApp\\ScooterApp\\Views\\Menu.xaml.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\Views\\Menu.xaml.cs",
+              "ToolTip": "D:\\Studies\\TOP\\\u041F\u0440\u043E\u0435\u043A\u0442\\ScooterApp\\ScooterApp\\Views\\Menu.xaml.cs",
+              "RelativeToolTip": "ScooterApp\\Views\\Menu.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T03:24:04.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuViewModel.cs",
+              "DocumentMoniker": "D:\\Studies\\TOP\\\u041F\u0440\u043E\u0435\u043A\u0442\\ScooterApp\\ScooterApp\\ViewModels\\MenuViewModel.cs",
+              "RelativeDocumentMoniker": "ScooterApp\\ViewModels\\MenuViewModel.cs",
+              "ToolTip": "D:\\Studies\\TOP\\\u041F\u0440\u043E\u0435\u043A\u0442\\ScooterApp\\ScooterApp\\ViewModels\\MenuViewModel.cs",
+              "RelativeToolTip": "ScooterApp\\ViewModels\\MenuViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T03:21:39.87Z",
+              "EditorCaption": ""
             }
           ]
         }

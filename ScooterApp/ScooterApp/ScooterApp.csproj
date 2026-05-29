@@ -26,6 +26,7 @@
   <ItemGroup>
     <None Remove="Images\logo.png" />
     <None Remove="Images\дождь.png" />
+    <None Remove="Images\неизвестно.png" />
     <None Remove="Images\облачно.png" />
     <None Remove="Images\солнечно.png" />
   </ItemGroup>
@@ -41,6 +42,7 @@
   <ItemGroup>
     <Resource Include="Images\logo.png" />
     <Resource Include="Images\дождь.png" />
+    <Resource Include="Images\неизвестно.png" />
     <Resource Include="Images\облачно.png" />
     <Resource Include="Images\солнечно.png" />
   </ItemGroup>

@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ScooterApp"
         mc:Ignorable="d"
+        Loaded="Menu_Loaded"
         Title="Меню"
         Height="900"
         Width="700"
@@ -132,20 +133,17 @@
             <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
 
-        <!-- Погода -->
+        <!-- Погода и время -->
         <Border Grid.Row="0" Style="{StaticResource PanelBorderStyle}" Padding="10,8" Grid.ColumnSpan="2" Grid.Column="1">
             <DockPanel LastChildFill="False">
-                <TextBlock Text="ПОГОДА:"
-                           VerticalAlignment="Center"
-                           FontSize="24"
-                           Margin="0,0,12,0"/>
-                <TextBlock x:Name="txtWeatherInfo"
-                           Text="Сегодня солнечно, 25°C"
+                <TextBlock x:Name="tbTime"
+                           Text="00:00:00"
                            VerticalAlignment="Center"
                            FontSize="22"
                            FontWeight="Bold"
                            Margin="0,0,12,0"/>
                 <Image x:Name="imgWeather"
+                       DockPanel.Dock="Right"
                        Width="32"
                        Height="32"
                        Stretch="Uniform"
@@ -187,13 +185,15 @@
         <ToggleButton Content="///" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked" Padding="10" Margin="0 0 10 10" Background="#E8DDBF" BorderThickness="2" BorderBrush="Black"/>
 
         <!-- "Выдвижная" панель с личным кабинетом и выходом -->
-        <StackPanel x:Name="spTools" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="6" Visibility="Collapsed" Panel.ZIndex="2" >
+        <StackPanel x:Name="spTools" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="6"  Panel.ZIndex="2" Visibility="Collapsed">
 
             <StackPanel.Background>
                 <SolidColorBrush Color="LightBlue" Opacity="0.8"/>
             </StackPanel.Background>
 
             <Image Source="/Images/logo.png" Margin="10" Width="250"/>
+
+            <TextBlock x:Name="tbRes" FontSize="10" TextWrapping="Wrap" ScrollViewer.CanContentScroll="True"/>
 
             <Button x:Name="btnAccount"
                 Content="Личный кабинет"

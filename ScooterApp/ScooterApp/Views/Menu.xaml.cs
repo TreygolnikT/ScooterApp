@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ScooterApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -9,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Xps.Serialization;
 
 namespace ScooterApp
 {
@@ -20,6 +22,26 @@ namespace ScooterApp
         public Menu()
         {
             InitializeComponent();
+
+            
+        }
+
+        public async void Menu_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var res = await MenuViewModel.ChooseWeather();
+                Uri uri = new Uri(res, UriKind.Relative);
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.UriSource = uri;
+                bitmap.EndInit();
+                imgWeather.Source = bitmap;
+            }
+            catch
+            {
+
+            }
         }
 
         private void btnRent_Click(object sender, RoutedEventArgs e)
